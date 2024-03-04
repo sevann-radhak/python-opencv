@@ -15,8 +15,6 @@ while True:
     img[:height//2, width//2:] = smaller_frame  
     img[height//2:, width//2:] = smaller_frame  
     
-    
-    
     cv2.imshow('frame', img)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
